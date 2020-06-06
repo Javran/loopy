@@ -1,0 +1,5 @@
+# Local environment setup
+/env.sh
+
+# Local package prefix
+/local/
