@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Run this script once to build grpc dependencies.
+
 # env.sh is the environment setup for building the project.
 # the script should export LOOPY_HOME and point it to the local project root.
 source env.sh
@@ -23,4 +25,4 @@ cmake -DgRPC_INSTALL=ON \
 
 make -j
 make install
-popd
+popd >/dev/null
